@@ -1,0 +1,10 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'nanotech/jellybeans.vim'
+hook_add = '''    
+    set t_Co=256
+    colorscheme jellybeans
+'''
+

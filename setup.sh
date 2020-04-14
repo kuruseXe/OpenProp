@@ -6,6 +6,7 @@ readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # Vim's File and Directory
 readonly VIMRC_ORG=${SCRIPT_DIR}/vimrc.org
 readonly VIMRC_SET=${HOME}/.vimrc
+readonly VIM_HOME=${HOME}/.vim
 readonly TOML_ORG=${SCRIPT_DIR}/rc
 readonly TOML_SET=${HOME}/.vim/rc
 
@@ -17,6 +18,10 @@ echo "vimrc file set."
 if [ -e ${TOML_SET:?} ]; then
     rm -rf ${TOML_SET:?}
     echo "toml file dir delete."
+fi
+
+if ! [ -e ${VIM_HOME:?} ]; then
+    mkdir ${VIM_HOME:?}
 fi
 
 cp -r ${TOML_ORG:?} ${TOML_SET:?}

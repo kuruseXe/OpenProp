@@ -8,3 +8,6 @@ hook_add = '''
     colorscheme jellybeans
 '''
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+

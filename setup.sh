@@ -25,6 +25,10 @@ if ! [ -e ${VIM_HOME:?} ]; then
 fi
 
 cp -r ${TOML_ORG:?} ${TOML_SET:?}
+for toml_fl in $(ls -1 ${TOML_SET:?})
+do
+    sed -i -e "s|__HOMEPATH__|${HOME}|g" ${TOML_SET:?}/${toml_fl:?}
+done
 echo "toml file set."
 
 echo "setup end."

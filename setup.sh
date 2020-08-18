@@ -9,6 +9,8 @@ readonly VIMRC_SET=${HOME}/.vimrc
 readonly VIM_HOME=${HOME}/.vim
 readonly TOML_ORG=${SCRIPT_DIR}/rc
 readonly TOML_SET=${HOME}/.vim/rc
+readonly TEMP_ORG=${SCRIPT_DIR}/template
+readonly TEMP_SET=${HOME}/.vim/template
 
 echo "setup start."
 
@@ -30,6 +32,9 @@ do
     sed -i -e "s|__HOMEPATH__|${HOME}|g" ${TOML_SET:?}/${toml_fl:?}
 done
 echo "toml file set."
+
+cp -r ${TEMP_ORG:?} ${TEMP_SET:?}
+echo "template file set."
 
 echo "setup end."
 exit 0

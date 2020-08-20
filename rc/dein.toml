@@ -29,3 +29,6 @@ hook_add = '''
         \ | endif
 '''
 
+[[plugins]]
+repo = 'mattn/vim-maketable'
+

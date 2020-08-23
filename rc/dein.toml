@@ -7,8 +7,16 @@ hook_add = '''
     set t_Co=256
     colorscheme jellybeans
 '''
+
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+[[plugins]]
+repo      = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
 
 [[plugins]]
 repo = 'tpope/vim-surround'

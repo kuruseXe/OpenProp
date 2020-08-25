@@ -40,3 +40,9 @@ hook_add = '''
 [[plugins]]
 repo = 'mattn/vim-maketable'
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+

@@ -22,6 +22,11 @@ if [ -e ${TOML_SET:?} ]; then
     echo "toml file dir delete."
 fi
 
+if [ -e ${TEMP_SET:?} ]; then
+    rm -rf ${TEMP_SET:?}
+    echo "template file dir delete."
+fi
+
 if ! [ -e ${VIM_HOME:?} ]; then
     mkdir ${VIM_HOME:?}
 fi

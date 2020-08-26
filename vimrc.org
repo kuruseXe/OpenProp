@@ -51,11 +51,11 @@ vmap <silent> ;h :s?^\(\s*\)+ '\([^']\+\)',*\s*$?\1\2?g<CR>
 vmap <silent> ;q :s?^\(\s*\)\(.*\)\s*$? \1 + '\2'?<CR>
 
 " 永続アンドゥの有効化
-set undofile
-if !isdirectory(expand("$HOME/.vim/undodir"))
-    call mkdir(expand("$HOME/.vim/undodir"), "p")
-endif
-set undodir=$HOME/.vim/undodir
+" set undofile
+" if !isdirectory(expand("$HOME/.vim/undodir"))
+"     call mkdir(expand("$HOME/.vim/undodir"), "p")
+" endif
+" set undodir=$HOME/.vim/undodir
 
 if !&compatible
   set nocompatible

@@ -43,6 +43,11 @@ nnoremap <S-Right> <C-w>><CR>
 nnoremap <S-Up>    <C-w>-<CR>
 nnoremap <S-Down>  <C-w>+<CR>
 
+" Tab操作
+nnoremap gr :tabprevious
+nnoremap <Tab>l :+tabmove
+nnoremap <Tab>h :-tabmove
+
 " バックスペースキーの有効化
 set backspace=indent,eol,start
 

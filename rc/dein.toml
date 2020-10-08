@@ -49,3 +49,15 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'mattn/vim-starwars'
+
+[[plugins]]
+repo = 'skanehira/badapple.vim'
+

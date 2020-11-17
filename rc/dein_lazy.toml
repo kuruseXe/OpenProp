@@ -38,9 +38,9 @@ hook_add = '''
     let $RUST_SRC_PATH='__HOMEPATH__/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 '''
 
-[[plugins]]
-repo = "davidhalter/jedi-vim"
-on_ft = ['python']
+" [[plugins]]
+" repo = 'davidhalter/jedi-vim'
+" on_ft = ['python']
 
 [[plugins]]
 repo = 'nvie/vim-flake8'
